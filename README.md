@@ -1,4 +1,4 @@
-![nery profile image](profile.jpg)
+![nery profile image](profile.png)
 # Masaki Iida
 ## Contact Info: ![email icon](Mail-icon.png) [Email](mailto:masakiiida@outlook.com)
 ## Education
