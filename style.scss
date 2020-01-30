@@ -106,7 +106,7 @@ body {
                 }
                 @include tab-sp {
                     width:100%;
-                }
+                };
             }
 
             .menu {
@@ -141,43 +141,43 @@ body {
         .clear {
             clear: both;
         }
+    }
+    
+    /* ========================================
+    フッター
+    ========================================= */
+    #footer {
+        margin-top: 0px;
+        width: 100%;
+        height: 300px;
+        color: #000;
 
-        /* ========================================
-        フッター
-        ========================================= */
-        footer {
-            margin-top: 0px;
-            width: 100%;
-            height: 300px;
-            color: #000;
-
-            #footer-ul {
-                text-align: center;
-                .footer-li {
-                    margin: 100px 20px;
-                    display: inline-block;
-                    color:#fff;
-                    opacity: 0.8;
-                }
-
-                .footer-a {
-                    color: #fff;
-                    border-radius: 5px;
-                    text-decoration: none;
-                    padding: 15px;
-                    &:hover {
-                        border: 1px solid #82cddd;
-                        padding: 14px;
-                    }
-                }
-            }
-
-            #copyright {
-                text-align: center;
-                color: #fff;
-                font-size: 12px;
+        #footer-ul {
+            text-align: center;
+            .footer-li {
+                margin: 100px 20px;
+                display: inline-block;
+                color:#fff;
                 opacity: 0.8;
             }
+
+            .footer-a {
+                color: #fff;
+                border-radius: 5px;
+                text-decoration: none;
+                padding: 15px;
+                &:hover {
+                    border: 1px solid #82cddd;
+                    padding: 14px;
+                }
+            }
+        }
+
+        #copyright {
+            text-align: center;
+            color: #fff;
+            font-size: 12px;
+            opacity: 0.8;
         }
     }
 }

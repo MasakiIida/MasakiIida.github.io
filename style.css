@@ -10,6 +10,9 @@ body {
   background-color: #331c06;
   /* ========================================
   ラッパー
+  ========================================= */
+  /* ========================================
+  フッター
   ========================================= */ }
   body #wrapper {
     max-width: 1200px;
@@ -23,9 +26,6 @@ body {
     ========================================= */
     /* ========================================
     フロート解除
-    ========================================= */
-    /* ========================================
-    フッター
     ========================================= */ }
     body #wrapper #top {
       width: 100%;
@@ -103,30 +103,30 @@ body {
         background: url(images/profile.jpeg) center no-repeat; }
     body #wrapper .clear {
       clear: both; }
-    body #wrapper footer {
-      margin-top: 0px;
-      width: 100%;
-      height: 300px;
-      color: #000; }
-      body #wrapper footer #footer-ul {
-        text-align: center; }
-        body #wrapper footer #footer-ul .footer-li {
-          margin: 100px 20px;
-          display: inline-block;
-          color: #fff;
-          opacity: 0.8; }
-        body #wrapper footer #footer-ul .footer-a {
-          color: #fff;
-          border-radius: 5px;
-          text-decoration: none;
-          padding: 15px; }
-          body #wrapper footer #footer-ul .footer-a:hover {
-            border: 1px solid #82cddd;
-            padding: 14px; }
-      body #wrapper footer #copyright {
-        text-align: center;
+  body #footer {
+    margin-top: 0px;
+    width: 100%;
+    height: 300px;
+    color: #000; }
+    body #footer #footer-ul {
+      text-align: center; }
+      body #footer #footer-ul .footer-li {
+        margin: 100px 20px;
+        display: inline-block;
         color: #fff;
-        font-size: 12px;
         opacity: 0.8; }
+      body #footer #footer-ul .footer-a {
+        color: #fff;
+        border-radius: 5px;
+        text-decoration: none;
+        padding: 15px; }
+        body #footer #footer-ul .footer-a:hover {
+          border: 1px solid #82cddd;
+          padding: 14px; }
+    body #footer #copyright {
+      text-align: center;
+      color: #fff;
+      font-size: 12px;
+      opacity: 0.8; }
 
 /*# sourceMappingURL=style.css.map */
