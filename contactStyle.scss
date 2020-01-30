@@ -22,202 +22,367 @@ $tab-sp: 780px; //タブレットとスマートフォン
 body {
     font-family: "メイリオ", Meiryo;
     background-color: #fff;
-}
-
-/* ========================================
+    
+    /* ========================================
     ヘッダー
-========================================= */
-header {
-    background-color: #242830;
-    width:100%;
-    height: 140px;
-    
-    
-    #navbar {
-        height: auto;
-        font-size: 24px;
-        padding-left: 60px;
-        line-height: 150px;
-        text-decoration: none;
-        display: inline-block;
-        
-        #nav-a {
+    ========================================= */
+    header {
+        background-color: #242830;
+        width:100%;
+        height: 140px;
+
+
+        #navbar {
+            height: auto;
+            font-size: 24px;
+            padding-left: 60px;
+            line-height: 150px;
             text-decoration: none;
-            #icon {
-                color: #fff;
-                font-weight: bold;
-                display: inline;
-                &:hover {
-                transition-duration: 0.3s;
-                border-bottom: 2px solid #fff;
+            display: inline-block;
+
+            #nav-a {
+                text-decoration: none;
+                #icon {
+                    color: #fff;
+                    font-weight: bold;
+                    display: inline;
+                    &:hover {
+                        transition-duration: 0.3s;
+                        border-bottom: 2px solid #fff;
+                    }
                 }
             }
         }
     }
-}
-
-/* ========================================
+    
+    /* ========================================
     メイン
-========================================= */
-#main {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    
-    /* ========================================
-    ファースト
     ========================================= */
-    #first {
-        width: 555px;
-        height: auto;
-        margin: 0 auto;
-        @include tab-sp {
-            width: auto;
-            padding: 0 10px;
-        }
-        
-        #insideFirst {
-            text-align: center;
-            
-            #first-icon {
-                height: 65px;
-                background: url(images/main-icon.png)no-repeat center;
-                margin-top: 60px;
-            }
-            
-            #firstDd {
-                font-size: 20px;
-                margin: 30px 0;
-                letter-spacing: 0.1em;
-            }
-            
-            #firstDt {
-                font-size: 14px;
-                color: #a3a3a3;
-                margin-bottom: 120px;
-            }
-        }
-    }
-    
-    /* ========================================
-    セカンド
-    ========================================= */
-    #second {
-        background-color: #f3f5f8;
+    #main {
         width: 100%;
         height: auto;
-        text-align: center;
-        @include tab-sp {
-            width: auto;
-            padding: 0 10px;
-        };
-        #second-icon {
-            margin: 50px 0 35px 0;
-            display:inline-block;
-            font-weight: bold;
-            font-size: 18px;
-            letter-spacing: 0.1em;
-        }
-        
-        #second-table {
+        margin: 0 auto;
+
+        /* ========================================
+        ファースト
+        ========================================= */
+        #first {
+            width: 555px;
+            height: auto;
             margin: 0 auto;
-            width: 100%;
-            .form-contents {
-                
-            }
-            
-            .input {
-                font-size: 15px;
-                margin-bottom: 10px;
-                width: 535px;
-                height: 45px;
-                border:solid 0px;
-                letter-spacing: 0.07em;
-                padding-left: 20px;
-                @include tab-sp {
-                    width: 100%;
-                    -webkit-box-sizing: border-box;
-                };
+            @include tab-sp {
+                width: auto;
+                padding: 0 10px;
             }
 
-            #form-textarea {
-                height: 150px;
-                padding-top: 15px;
+            #insideFirst {
+                text-align: center;
+
+                #first-icon {
+                    height: 65px;
+                    background: url(images/main-icon.png)no-repeat center;
+                    margin-top: 60px;
+                }
+
+                #firstDd {
+                    font-size: 20px;
+                    margin: 30px 0;
+                    letter-spacing: 0.1em;
+                }
+
+                #firstDt {
+                    font-size: 14px;
+                    color: #a3a3a3;
+                    margin-bottom: 120px;
+                }
             }
         }
-        
-        
-        #button-p{
-            margin: 0 auto;
-            padding-bottom: 100px;
-            
-            
-            #submit-button {
-                font-size: 14px;
-                -webkit-appearance: none;
-                background-color: white;
-                display: inline-block;
-                padding: 20px 50px;
-                border-radius: 5px;
-                opacity: 0.8;
-                
+
+        /* ========================================
+        セカンド
+        ========================================= */
+        #second {
+            background-color: #f3f5f8;
+            width: 100%;
+            height: auto;
+            text-align: center;
+            @include tab-sp {
+                width: auto;
+                padding: 0 10px;
+            };
+            #second-icon {
+                margin: 50px 0 35px 0;
+                display:inline-block;
+                font-weight: bold;
+                font-size: 18px;
+                letter-spacing: 0.1em;
+            }
+
+            #second-table {
+                margin: 0 auto;
+                width: 100%;
+                .form-contents {
+
+                }
+
+                .input {
+                    font-size: 15px;
+                    margin-bottom: 10px;
+                    width: 535px;
+                    height: 45px;
+                    border:solid 0px;
+                    letter-spacing: 0.07em;
+                    padding-left: 20px;
+                    @include tab-sp {
+                        width: 100%;
+                        -webkit-box-sizing: border-box;
+                    };
+                }
+
+                #form-textarea {
+                    height: 150px;
+                    padding-top: 15px;
+                }
+            }
+
+
+            #button-p{
+                margin: 0 auto;
+                padding-bottom: 100px;
+
+
+                #submit-button {
+                    font-size: 14px;
+                    -webkit-appearance: none;
+                    background-color: white;
+                    display: inline-block;
+                    padding: 20px 50px;
+                    border-radius: 5px;
+                    opacity: 0.8;
+
                     &:hover {
                         opacity:1;
                     }
-            }   
-        }
-    }
-}
-
-
-/* ========================================
-    フッター
-========================================= */
-#footer {
-    width: 100%;
-    height: auto;
-    background-color: #242830;
-    
-    #footer-ul {
-        text-align: center;
-        width: 100%;
-        @include tab-sp {
-           padding-top: 20px;
-        };
-
-        .footer-li {
-            margin: 100px 20px;
-            display: inline-block;
-            color:#fff;
-            opacity: 0.8;
-            @include tab-sp {
-                margin: 20px 0;
-                display: block;
-                width: 100%;
-            };
-            
-            .footer-a {
-                color: #fff;
-                border-radius: 5px;
-                text-decoration: none;
-                padding: 15px;
-                
-                &:hover {
-                    border: 1px solid #82cddd;
-                    padding: 14px;
-                }
+                }   
             }
         }
     }
-    
-    #copyright {
-        padding-bottom: 70px;
-        text-align: center;
-        color: #fff;
-        font-size: 10px;
-        opacity: 0.8;
+
+
+    /* ========================================
+    フッター
+    ========================================= */
+    #footer {
+        width: 100%;
+        height: auto;
+        background-color: #242830;
+
+        #footer-ul {
+            text-align: center;
+            width: 100%;
+            @include tab-sp {
+                padding-top: 20px;
+            };
+
+            .footer-li {
+                margin: 100px 20px;
+                display: inline-block;
+                color:#fff;
+                opacity: 0.8;
+                @include tab-sp {
+                    margin: 20px 0;
+                    display: block;
+                    width: 100%;
+                };
+
+                .footer-a {
+                    color: #fff;
+                    border-radius: 5px;
+                    text-decoration: none;
+                    padding: 15px;
+
+                    &:hover {
+                        border: 1px solid #82cddd;
+                        padding: 14px;
+                    }
+                }
+            }
+        }
+
+        #copyright {
+            padding-bottom: 70px;
+            text-align: center;
+            color: #fff;
+            font-size: 10px;
+            opacity: 0.8;
+        }
+    }/* ========================================
+    メイン
+    ========================================= */
+    #main {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+
+        /* ========================================
+        ファースト
+        ========================================= */
+        #first {
+            width: 555px;
+            height: auto;
+            margin: 0 auto;
+            @include tab-sp {
+                width: auto;
+                padding: 0 10px;
+            }
+
+            #insideFirst {
+                text-align: center;
+
+                #first-icon {
+                    height: 65px;
+                    background: url(images/main-icon.png)no-repeat center;
+                    margin-top: 60px;
+                }
+
+                #firstDd {
+                    font-size: 20px;
+                    margin: 30px 0;
+                    letter-spacing: 0.1em;
+                }
+
+                #firstDt {
+                    font-size: 14px;
+                    color: #a3a3a3;
+                    margin-bottom: 120px;
+                }
+            }
+        }
+
+        /* ========================================
+        セカンド
+        ========================================= */
+        #second {
+            background-color: #f3f5f8;
+            width: 100%;
+            height: auto;
+            text-align: center;
+            @include tab-sp {
+                width: auto;
+                padding: 0 10px;
+            };
+            #second-icon {
+                margin: 50px 0 35px 0;
+                display:inline-block;
+                font-weight: bold;
+                font-size: 18px;
+                letter-spacing: 0.1em;
+            }
+
+            #second-table {
+                margin: 0 auto;
+                width: 100%;
+                .form-contents {
+
+                }
+
+                .input {
+                    font-size: 15px;
+                    margin-bottom: 10px;
+                    width: 535px;
+                    height: 45px;
+                    border:solid 0px;
+                    letter-spacing: 0.07em;
+                    padding-left: 20px;
+                    @include tab-sp {
+                        width: 100%;
+                        -webkit-box-sizing: border-box;
+                    };
+                }
+
+                #form-textarea {
+                    height: 150px;
+                    padding-top: 15px;
+                }
+            }
+
+
+            #button-p{
+                margin: 0 auto;
+                padding-bottom: 100px;
+
+
+                #submit-button {
+                    font-size: 14px;
+                    -webkit-appearance: none;
+                    background-color: white;
+                    display: inline-block;
+                    padding: 20px 50px;
+                    border-radius: 5px;
+                    opacity: 0.8;
+
+                    &:hover {
+                        opacity:1;
+                    }
+                }   
+            }
+        }
+    }
+
+
+    /* ========================================
+    フッター
+    ========================================= */
+    #footer {
+        width: 100%;
+        height: auto;
+        background-color: #242830;
+
+        #footer-ul {
+            text-align: center;
+            width: 100%;
+            @include tab-sp {
+                padding-top: 20px;
+            };
+
+            .footer-li {
+                margin: 100px 20px;
+                display: inline-block;
+                color:#fff;
+                opacity: 0.8;
+                @include tab-sp {
+                    margin: 20px 0;
+                    display: block;
+                    width: 100%;
+                };
+
+                .footer-a {
+                    color: #fff;
+                    border-radius: 5px;
+                    text-decoration: none;
+                    padding: 15px;
+
+                    &:hover {
+                        border: 1px solid #82cddd;
+                        padding: 14px;
+                    }
+                }
+            }
+        }
+
+        #copyright {
+            padding-bottom: 70px;
+            text-align: center;
+            color: #fff;
+            font-size: 10px;
+            opacity: 0.8;
+        }
     }
 }
+
+
+
+
 
 
 

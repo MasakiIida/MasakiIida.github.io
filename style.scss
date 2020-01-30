@@ -1,0 +1,193 @@
+/* ========================================
+レスポンシブ
+========================================= */
+$pc: 781px;     //PC
+$tab-sp: 780px; //タブレットとスマートフォン
+
+@mixin pc {
+    @media(min-width:($pc)) {
+        @content;
+    }
+}
+
+@mixin tab-sp {
+    @media(max-width:($tab-sp)) {
+        @content;
+    }
+}
+
+/* ========================================
+    ボディー
+========================================= */
+body {
+    font-family: "メイリオ", Meiryo;
+    background-color: #331c06;
+    
+    /* ========================================
+    ラッパー
+    ========================================= */
+    #wrapper {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+
+        /* ========================================
+        トップ
+        ========================================= */
+        #top {
+            width: 100%;
+            height: 800px;
+            margin: 0 auto;
+            background: url(images/main-image.jpg) no-repeat;
+            text-align: center;
+
+            #top-dl {
+                padding-top: 250px;
+
+                #top-dt {
+                    color: #fff;
+                    font-weight: bold;
+                    font-size: 44px;
+                }
+
+                #top-dd{
+                    color: #fff;
+                    font-size: 30px;
+                }
+            }
+
+            #top-get {
+                color: #fff;
+                font-size: 20px;
+                padding: 30px;
+                border-radius: 5px;
+                border: 2px solid #fff;
+                display: inline-block;
+                text-decoration: none;
+                margin-top: 150px;
+                transition-duration: 0.3s;	/*変化に掛かる時間*/
+                &:hover {
+                    color: #82cddd;
+                    border: 2px solid #82cddd;
+                    cursor: pointer;
+                    transition-duration: 0.3s;	/*変化に掛かる時間*/
+                }
+            }
+
+            #top-down {
+                margin: 50px auto;
+                display: table;
+                color: #fff;
+                text-decoration: none;
+                transition-duration: 0.3s;	/*変化に掛かる時間*/
+                &:hover {
+                    transform: scale(1.05);	/*画像の拡大率*/
+                    transition-duration: 0.3s;	/*変化に掛かる時間*/
+                }
+                #down-icon-img {
+                    width:25px;
+                }
+            }
+        }
+        /* ========================================
+        メイン
+        ========================================= */
+        #main {
+            margin-top: 150px;
+
+            .main-images {
+                float: left;
+                width: 50%;
+                height: 400px;
+                transition: 0.5s;
+                &:hover {
+                    transition: 0.5s;
+                    filter:blur(2px);
+                }
+                @include tab-sp {
+                    width:100%;
+                }
+            }
+
+            .menu {
+                font-size: 20px;
+                display: block;
+                color: #000;
+                line-height: 400px;
+                text-align: center;
+                text-decoration: none;
+            }
+
+            #about {
+                background: url(images/about.jpeg) center no-repeat;
+            }
+
+            #contact {
+                background: url(images/contact.jpeg) center no-repeat;
+            }
+
+            #portfolio {
+                background: url(images/portfolio.jpeg) center no-repeat;
+            }
+
+            #profile {
+                background: url(images/profile.jpeg) center no-repeat;
+            }
+        }
+
+        /* ========================================
+        フロート解除
+        ========================================= */
+        .clear {
+            clear: both;
+        }
+
+        /* ========================================
+        フッター
+        ========================================= */
+        footer {
+            margin-top: 0px;
+            width: 100%;
+            height: 300px;
+            color: #000;
+
+            #footer-ul {
+                text-align: center;
+                .footer-li {
+                    margin: 100px 20px;
+                    display: inline-block;
+                    color:#fff;
+                    opacity: 0.8;
+                }
+
+                .footer-a {
+                    color: #fff;
+                    border-radius: 5px;
+                    text-decoration: none;
+                    padding: 15px;
+                    &:hover {
+                        border: 1px solid #82cddd;
+                        padding: 14px;
+                    }
+                }
+            }
+
+            #copyright {
+                text-align: center;
+                color: #fff;
+                font-size: 12px;
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
