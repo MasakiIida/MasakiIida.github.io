@@ -59,7 +59,7 @@ body {
     メイン
     ========================================= */
     #main {
-        width: 100%;
+        width: 555px;
         height: auto;
         margin: 0 auto;
 
@@ -67,7 +67,7 @@ body {
         ファースト
         ========================================= */
         #first {
-            width: 555px;
+            width: 100%;
             height: auto;
             margin: 0 auto;
             @include tab-sp {
@@ -351,7 +351,7 @@ body {
                 color:#fff;
                 opacity: 0.8;
                 @include tab-sp {
-                    margin: 20px 0;
+                    margin: 50px 0;
                     display: block;
                     width: 100%;
                 };

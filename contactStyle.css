@@ -44,7 +44,7 @@ body {
             transition-duration: 0.3s;
             border-bottom: 2px solid #fff; }
   body #main {
-    width: 100%;
+    width: 555px;
     height: auto;
     margin: 0 auto;
     /* ========================================
@@ -54,7 +54,7 @@ body {
     セカンド
     ========================================= */ }
     body #main #first {
-      width: 555px;
+      width: 100%;
       height: auto;
       margin: 0 auto; }
       @media (max-width: 780px) {
@@ -250,7 +250,7 @@ body {
         opacity: 0.8; }
         @media (max-width: 780px) {
           body #footer #footer-ul .footer-li {
-            margin: 20px 0;
+            margin: 50px 0;
             display: block;
             width: 100%; } }
         body #footer #footer-ul .footer-li .footer-a {
