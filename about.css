@@ -1,5 +1,8 @@
 @charset "UTF-8";
 /* ========================================
+変数
+========================================= */
+/* ========================================
 レスポンシブ
 ========================================= */
 /* ========================================
@@ -7,12 +10,15 @@
 ========================================= */
 body {
   font-family: "メイリオ", Meiryo;
-  background-color: #fff;
+  background-color: #ffffff;
   /* ========================================
   ヘッダー
   ========================================= */
   /* ========================================
   ラッパー
+  ========================================= */
+  /* ========================================
+  フッター
   ========================================= */ }
   body header {
     background-color: #242830;
@@ -28,12 +34,12 @@ body {
       body header #navbar #nav-a {
         text-decoration: none; }
         body header #navbar #nav-a #icon {
-          color: #fff;
+          color: #ffffff;
           font-weight: bold;
           display: inline; }
           body header #navbar #nav-a #icon:hover {
             transition-duration: 0.3s;
-            border-bottom: 2px solid #fff; }
+            border-bottom: 2px solid #ffffff; }
   body #wrapper {
     width: 100%;
     height: auto;
@@ -89,16 +95,61 @@ body {
           margin-right: 90px;
           line-height: 1.5em;
           text-align: left;
-          padding-top: 20px; }
+          padding-top: 20px;
+          color: #a5a5a5; }
           @media (max-width: 900px) {
             body #wrapper #top #top-ul #top-text {
-              margin: 0px 50px 0 5px; } }
+              margin: 0 50px 0 5px; } }
+          @media (max-width: 600px) {
+            body #wrapper #top #top-ul #top-text {
+              margin: 0 20px 0 5px; } }
+          body #wrapper #top #top-ul #top-text #text-link {
+            text-decoration: none;
+            color: #000;
+            cursor: pointer;
+            cursor: hand;
+            transition-duration: 0.2s; }
+            body #wrapper #top #top-ul #top-text #text-link:hover {
+              transition-duration: 0.3s;
+              color: #82cddd; }
     body #wrapper #bottom {
       height: 100px;
       background-color: #f3f5f8; }
   body #footer {
     width: 100%;
-    height: 100px;
-    background-color: black; }
+    height: auto;
+    background-color: #242830; }
+    body #footer #footer-ul {
+      text-align: center;
+      width: 100%; }
+      @media (max-width: 600px) {
+        body #footer #footer-ul {
+          padding-top: 20px; } }
+      body #footer #footer-ul .footer-li {
+        margin: 100px 20px;
+        display: inline-block;
+        opacity: 0.8; }
+        @media (max-width: 600px) {
+          body #footer #footer-ul .footer-li {
+            margin: 50px 0;
+            display: block;
+            width: 100%; } }
+        body #footer #footer-ul .footer-li .footer-a {
+          color: #ffffff;
+          border-radius: 5px;
+          text-decoration: none;
+          padding: 15px;
+          opacity: 0.8; }
+          body #footer #footer-ul .footer-li .footer-a:hover {
+            transition-duration: 0.3s;
+            border: 1px solid #82cddd;
+            padding: 14px;
+            color: #82cddd; }
+    body #footer #copyright {
+      padding-bottom: 70px;
+      text-align: center;
+      color: #ffffff;
+      font-size: 10px;
+      opacity: 0.5; }
 
 /*# sourceMappingURL=about.css.map */
