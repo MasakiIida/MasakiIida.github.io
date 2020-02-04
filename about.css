@@ -43,9 +43,15 @@ body {
   body #wrapper {
     width: 100%;
     height: auto;
-    margin: 0 auto; }
+    margin: 0 auto;
+    /* ========================================
+    トップ
+    ========================================= */
+    /* ========================================
+    ボトム
+    ========================================= */ }
     body #wrapper #top {
-      width: 1100px;
+      width: 1150px;
       height: auto;
       text-align: center;
       margin: 0 auto 125px auto; }
@@ -64,6 +70,14 @@ body {
         font-size: 24px;
         padding-top: 80px;
         letter-spacing: 0.1em; }
+      body #wrapper #top #top-h2 {
+        margin: 10px 0; }
+        body #wrapper #top #top-h2 #url-span #url {
+          text-decoration: none;
+          color: #000; }
+          body #wrapper #top #top-h2 #url-span #url:hover {
+            transition-duration: 0.3s;
+            color: #819ddb; }
       body #wrapper #top #top-ul {
         margin-top: 25px; }
         body #wrapper #top #top-ul #top-image {
@@ -96,7 +110,9 @@ body {
           line-height: 1.5em;
           text-align: left;
           padding-top: 20px;
-          color: #a5a5a5; }
+          color: #a5a5a5;
+          background-color: aqua;
+          margin-left: 280px; }
           @media (max-width: 900px) {
             body #wrapper #top #top-ul #top-text {
               margin: 0 50px 0 5px; } }
@@ -111,10 +127,110 @@ body {
             transition-duration: 0.2s; }
             body #wrapper #top #top-ul #top-text #text-link:hover {
               transition-duration: 0.3s;
-              color: #82cddd; }
+              color: #819ddb; }
     body #wrapper #bottom {
-      height: 100px;
+      width: 100%;
+      height: auto;
       background-color: #f3f5f8; }
+      body #wrapper #bottom #bottom-container {
+        width: 1150px;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 100px;
+        /* ========================================
+        フロート解除
+        ========================================= */ }
+        @media (max-width: 1150px) {
+          body #wrapper #bottom #bottom-container {
+            width: 850px; } }
+        @media (max-width: 900px) {
+          body #wrapper #bottom #bottom-container {
+            width: 600px; } }
+        @media (max-width: 600px) {
+          body #wrapper #bottom #bottom-container {
+            width: 100%;
+            padding: 0 10px;
+            box-sizing: border-box; } }
+        body #wrapper #bottom #bottom-container #bottom-h3 {
+          font-size: 20px;
+          color: #000;
+          letter-spacing: 0.2em;
+          padding: 70px 0;
+          font-weight: bold; }
+        body #wrapper #bottom #bottom-container .bottom-div {
+          float: left;
+          width: 350px;
+          height: 200px;
+          opacity: 0;
+          transform: translate(0, 100px);
+          transition: all 1s; }
+          body #wrapper #bottom #bottom-container .bottom-div.active {
+            opacity: 1;
+            transform: translate(0, 0); }
+          @media (max-width: 1150px) {
+            body #wrapper #bottom #bottom-container .bottom-div {
+              width: 100%;
+              margin: 0; } }
+          body #wrapper #bottom #bottom-container .bottom-div #first-ul #first-title {
+            background: url(images/first-icon.png) center top no-repeat; }
+          body #wrapper #bottom #bottom-container .bottom-div #second-ul #second-title {
+            background: url(images/second-icon.png) center top no-repeat; }
+          body #wrapper #bottom #bottom-container .bottom-div #third-ul #third-title {
+            background: url(images/third-icon.png) center top no-repeat; }
+          body #wrapper #bottom #bottom-container .bottom-div .bottom-title {
+            padding-top: 80px;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1em;
+            letter-spacing: 0.2em;
+            font-size: 14px; }
+            body #wrapper #bottom #bottom-container .bottom-div .bottom-title:before {
+              content: '';
+              position: absolute;
+              left: 50%;
+              bottom: -15px;
+              /*線の上下位置*/
+              display: inline-block;
+              width: 60px;
+              /*線の長さ*/
+              height: 2px;
+              /*線の太さ*/
+              -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+              /*位置調整*/
+              background-color: #819ddb;
+              /*線の色*/
+              border-radius: 2px;
+              /*線の丸み*/ }
+          body #wrapper #bottom #bottom-container .bottom-div .bottom-text {
+            margin-top: 25px;
+            font-size: 13px;
+            color: #a5a5a5;
+            padding-bottom: 100px; }
+        body #wrapper #bottom #bottom-container .clear {
+          clear: both; }
+        body #wrapper #bottom #bottom-container #bottom-end {
+          margin-top: 50px;
+          display: inline-block;
+          letter-spacing: 0.1em;
+          border-bottom: 2px solid #819ddb;
+          padding-bottom: 10px;
+          opacity: 0;
+          transform: translate(0, 100px);
+          transition: all 1s; }
+          body #wrapper #bottom #bottom-container #bottom-end.active {
+            opacity: 1;
+            transform: translate(0, 0); }
+          @media (max-width: 600px) {
+            body #wrapper #bottom #bottom-container #bottom-end {
+              margin-bottom: 100px; } }
+          body #wrapper #bottom #bottom-container #bottom-end #end-content {
+            text-decoration: none;
+            color: #000; }
+            body #wrapper #bottom #bottom-container #bottom-end #end-content:hover {
+              transition-duration: 0.3s;
+              color: #819ddb; }
   body #footer {
     width: 100%;
     height: auto;
@@ -142,9 +258,9 @@ body {
           opacity: 0.8; }
           body #footer #footer-ul .footer-li .footer-a:hover {
             transition-duration: 0.3s;
-            border: 1px solid #82cddd;
+            border: 1px solid #819ddb;
             padding: 14px;
-            color: #82cddd; }
+            color: #819ddb; }
     body #footer #copyright {
       padding-bottom: 70px;
       text-align: center;

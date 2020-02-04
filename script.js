@@ -33,5 +33,21 @@ $(function(){
         });
     });
     
+    //スクロール表示
+    $(function(){
+        $(window).scroll(function (){
+            $('.bottom-div,#bottom-end').each(function(){
+                var position = $(this).offset().top;
+                var scroll = $(window).scrollTop();
+                var windowHeight = $(window).height();
+                if (scroll > position - windowHeight + 0){
+                    $(this).addClass('active');
+                } else {
+                    $(this).removeClass('active');
+                }
+            });
+        });
+    });
+    
 });
 
