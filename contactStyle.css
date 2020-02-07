@@ -1,5 +1,8 @@
 @charset "UTF-8";
 /* ========================================
+変数
+========================================= */
+/* ========================================
     レスポンシブ
 ========================================= */
 /* ========================================
@@ -142,7 +145,8 @@ body {
           padding: 15px; }
           body #footer #footer-ul .footer-li .footer-a:hover {
             border: 1px solid #82cddd;
-            padding: 14px; }
+            padding: 14px;
+            transition-duration: 0.3s; }
     body #footer #copyright {
       padding-bottom: 70px;
       text-align: center;

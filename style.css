@@ -1,5 +1,8 @@
 @charset "UTF-8";
 /* ========================================
+変数
+========================================= */
+/* ========================================
 レスポンシブ
 ========================================= */
 /* ========================================
@@ -35,33 +38,32 @@ body {
       body #wrapper #top #top-dl {
         padding-top: 250px; }
         body #wrapper #top #top-dl #top-dt {
-          color: #fff;
+          color: #ffffff;
           font-weight: bold;
           font-size: 44px; }
         body #wrapper #top #top-dl #top-dd {
-          color: #fff;
+          color: #ffffff;
           font-size: 30px; }
       body #wrapper #top #top-get {
-        color: #fff;
+        color: #ffffff;
         font-size: 20px;
         padding: 30px;
         border-radius: 5px;
-        border: 2px solid #fff;
+        border: 2px solid #ffffff;
         display: inline-block;
         text-decoration: none;
         margin-top: 150px;
-        transition-duration: 0.3s;
-        /*変化に掛かる時間*/ }
+        transition-duration: 0.3s; }
         body #wrapper #top #top-get:hover {
-          color: #82cddd;
-          border: 2px solid #82cddd;
+          color: #819ddb;
+          border: 2px solid #819ddb;
           cursor: pointer;
           transition-duration: 0.3s;
           /*変化に掛かる時間*/ }
       body #wrapper #top #top-down {
         margin: 50px auto;
         display: table;
-        color: #fff;
+        color: #ffffff;
         text-decoration: none;
         transition-duration: 0.3s;
         /*変化に掛かる時間*/ }
@@ -74,24 +76,40 @@ body {
           width: 25px; }
     body #wrapper #main {
       margin-top: 150px; }
+      @media (max-width: 1200px) {
+        body #wrapper #main {
+          padding: 0 10px; } }
       body #wrapper #main .main-images {
         float: left;
-        width: 50%;
-        height: 400px;
-        transition: 0.5s; }
+        width: 580px;
+        height: 50%;
+        transition: 0.5s;
+        margin: 10px;
+        opacity: 0;
+        transform: translate(0, 100px);
+        transition: all 3s; }
         body #wrapper #main .main-images:hover {
           transition: 0.5s;
           filter: blur(2px); }
+        @media (max-width: 1200px) {
+          body #wrapper #main .main-images {
+            width: 50%;
+            margin: 0;
+            transition: all 3s; } }
         @media (max-width: 780px) {
           body #wrapper #main .main-images {
+            margin: 0 auto;
             width: 100%; } }
-      body #wrapper #main .menu {
-        font-size: 20px;
-        display: block;
-        color: #000;
-        line-height: 400px;
-        text-align: center;
-        text-decoration: none; }
+        body #wrapper #main .main-images .menu {
+          font-size: 20px;
+          display: block;
+          color: #000;
+          line-height: 400px;
+          text-align: center;
+          text-decoration: none; }
+        body #wrapper #main .main-images.active {
+          opacity: 1;
+          transform: translate(0, 0); }
       body #wrapper #main #about {
         background: url(images/about.jpeg) center no-repeat; }
       body #wrapper #main #contact {
@@ -103,7 +121,6 @@ body {
     body #wrapper .clear {
       clear: both; }
   body #footer {
-    margin-top: 0px;
     width: 100%;
     height: 300px;
     color: #000; }
@@ -112,7 +129,6 @@ body {
       body #footer #footer-ul .footer-li {
         margin: 100px 20px;
         display: inline-block;
-        color: #fff;
         opacity: 0.8; }
         @media (max-width: 780px) {
           body #footer #footer-ul .footer-li {
@@ -120,16 +136,19 @@ body {
             width: 100%;
             margin: 50px 0; } }
       body #footer #footer-ul .footer-a {
-        color: #fff;
+        color: #ffffff;
         border-radius: 5px;
         text-decoration: none;
         padding: 15px; }
         body #footer #footer-ul .footer-a:hover {
-          border: 1px solid #82cddd;
-          padding: 14px; }
+          border: 1px solid #819ddb;
+          padding: 14px;
+          color: #819ddb;
+          transition-duration: 0.3s;
+          color: #819ddb; }
     body #footer #copyright {
       text-align: center;
-      color: #fff;
+      color: #ffffff;
       font-size: 12px;
       opacity: 0.8; }
       @media (max-width: 780px) {

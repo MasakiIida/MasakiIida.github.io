@@ -12,14 +12,6 @@ $(function(){
         }, function(){
         $(this).stop().animate({opacity:1},500);
         });
-        
-    
-    // ホバー時のフォントカラー切り替え
-    $(".footer-li").hover(function(){
-        $(this).stop().animate({'border':'1px solid #fff', 'color':'#82cddd'},300);
-        }, function(){
-        $(this).stop().animate({'border':'1px solid #fff', 'color':'#fff'},300);
-        });
     
     // スムーススクロール
     $(function(){
@@ -36,7 +28,7 @@ $(function(){
     //スクロール表示
     $(function(){
         $(window).scroll(function (){
-            $('.bottom-div,#bottom-end').each(function(){
+            $('.bottom-div,#bottom-end,.main-images').each(function(){
                 var position = $(this).offset().top;
                 var scroll = $(window).scrollTop();
                 var windowHeight = $(window).height();
