@@ -45,3 +45,11 @@ a:focus {outline:none;}
 }
 .cf:after {clear: both;}
 .cf {*zoom: 1;}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
