@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charaset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile|Masaki's Room</title>
+    <link rel="stylesheet" href="reset.css" 　type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    
+</head>
+
+<!-- ヘッダー -->
+<header class="header" id="header">
+    <div class="nav">
+        <a class="nav-logo" href="index.html">Masaki's Room</a>
+        <ul class="nav__menu">
+            <li><a class="nav__menu-choice" href="index.html">HOME</a></li>
+            <li><a class="nav__menu-choice" href="about.html">ABOUT</a></li>
+            <li><a class="nav__menu-choice" href="contact.html">CONTACT</a></li>
+        </ul>
+
+        <input id="my-parts-checkbox" class="my-parts-hidden" type="checkbox">
+        <label id="my-parts-icon" for="my-parts-checkbox"><span></span></label>
+
+        <ul class="nav__menu-sp">
+            <li><a class="nav__menu-sp-choice" href="index.html">HOME</a></li>
+            <li><a class="nav__menu-sp-choice" href="about.html">ABOUT</a></li>
+            <li><a class="nav__menu-sp-choice" href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+</header>
+
+<!-- ボディー -->
+
+<body class="profile">
+
+    <!-- ビデオ -->
+    <div class="video">
+        <div class="video-inner">
+            <video class="video-file" src="images/video.mp4" loop autoplay muted></video>
+        </div>
+        <h1 class="video-text">MY PROFILE</h1>
+        <a class="video__scroll" href="#section">
+            <span class="video__scroll-text">scroll</span>
+            <div class="video__scroll-arrow"></div>
+        </a>
+    </div>
+
+    <!-- イントロデュース -->
+    <div class="intro" id="section">
+        <hr class="intro-title" data-content="WHO AM I?">
+        <!-- 個人情報 -->
+        <div class="intro__identity">
+            <div class="intro__identity__left">
+                <img class="picture" src="images/picture-1.jpg">
+            </div>
+            <p class="intro__identity__right-icon"><img class="island" src="images/prof-icon-1.png" alt="island"></p>
+            <ul class="intro__identity__right">
+                <h2 class="intro__identity__right-title">IDENTITY</h2>
+                <div class="intro__identity__right__inner">
+                    <li class="intro__identity__right__inner-text">Name: Masaki</li>
+                    <li class="intro__identity__right__inner-text">Gender: Male</li>
+                    <li class="intro__identity__right__inner-text">Birth: 1996/08/16</li>
+                </div>
+            </ul>
+        </div>
+
+        <!-- 連絡先 -->
+        <div class="intro__contact">
+            <div class="intro__contact__right">
+                <img class="picture" src="images/picture-2.jpg">
+            </div>
+            <p class="intro__contact__left-icon"><img class="boat" src="images/prof-icon-2.png" alt="boat"></p>
+            <ul class="intro__contact__left">
+                <h3 class="intro__contact__right-title">CONTACT</h3>
+                <div class="intro__contact__right__inner">
+                    <li class="intro__contact__right__inner-text">E-mail: masakiiida@outlook.com</li>
+                    <li class="intro__contact__right__inner-text">Address: Tsuchiura-shi, Ibaraki</li>
+                    <li class="intro__contact__right__inner-text"></li>
+                </div>
+            </ul>
+        </div>
+
+        <!-- スキル -->
+        <div class="intro__skill">
+            <div class="intro__skill__left">
+                <img class="picture" src="images/picture-3.jpg" alt="skill-picture-left">
+            </div>
+            <p class="intro__skill-icon"><img class="pc" src="images/prof-icon-3.png" alt="pc"></p>
+            <ul class="intro__skill__center">
+                <li class="intro__skill__center-title">SKILL</li>
+                <div class="intro__skill__center__inner">
+                    <li class="intro__skill__center__inner-text intro__skill__center-text-css">CSS/HTML<span class="skill-css">3 months</span></li>
+                    <li class="intro__skill__center__inner-text intro__skill__center-text-js">Javascript<span class="skill-js">3 months</span></li>
+                    <li class="intro__skill__center__inner-text intro__skill__center-text-eng">ENGLISH<span class="skill-eng">3 years</span></li>
+                </div>
+
+            </ul>
+            <div class="intro__skill__right">
+                <img class="picture" src="images/picture-4.jpg" alt="skill-picture-right">
+            </div>
+        </div>
+    </div>
+
+    <div class="wave">
+        <svg class="editorial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0
+                                              58-18 88-18s
+                                              58 18 88 18
+                                              58-18 88-18
+                                              58 18 88 18
+                                              v44h-352z" />
+            </defs>
+            <g class="parallax1">
+                <use xlink:href="#gentle-wave" x="50" y="0" fill="#4579e2" />
+            </g>
+            <g class="parallax2">
+                <use xlink:href="#gentle-wave" x="50" y="6" fill="#00ffff" />
+            </g>
+            <g class="parallax3">
+                <use xlink:href="#gentle-wave" x="50" y="9" fill="#3461c1" />
+            </g>
+        </svg>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__botton">
+            <a class="footer__botton-inner" href="index.html">HOME</a>
+            <a class="footer__botton-inner" href="about.html">ABOUT</a>
+            <a class="footer__botton-inner" href="contact.html">CONTACT</a>
+        </div>
+        <h4 class="copyright">© 2020 · MASAKI IIDA · ALL RIGHTS RESERVED</h4>
+    </footer>
+    <div id="page_top"><a href="#"></a></div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,82 +1,90 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charaset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contact|Masaki's Room</title>
-        <link rel="stylesheet" href="contactStyle.css" type="text/css" media="screen">
-        <link rel="stylesheet" href="reset.css"　type="text/css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.js"></script>
-    </head>
-    
-    <body>
 
-        <!-- ヘッダー -->
-        <header>
-            <nav id="navbar">
-                <a id="nav-a" href="index.html"><h1 id="icon">Masaki's Room</h1></a>
-            </nav>
-        </header>
-        
-        <!-- メイン -->
-        <div id="main">
-            <div id="first">
-                <div id="insideFirst">
-                    <dl>
-                        <h2 id="first-icon"></h2>
-                        <dd id="firstDd">
-                            LETS WORK TOGETHER!
-                        </dd>
-                        <dt id="firstDt">
-                            Whatever your needs and goals get in touch and I can advise how I can help you take this forward. If you would like to discuss your project or would just like to say hello then do get in touch and drop me a message below.
-                        </dt>
-                    </dl>
-                </div> 
-            </div>
-            
-            <div id="second">
-                <h3 id="second-icon">GET IN TOUCH</h3>
-                <form id="second-form">
-                    <table id="second-table">
-                        <tr>
-                            <td class="form-contents">
-                                <input class="input" type="text" id="form-name" placeholder="Your Name">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="form-contents">
-                                <input class="input" type="text" id="form-mail" placeholder="Your Email">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="form-contents">
-                                <input class="input" type="text" id="form-tel" placeholder="Phone">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <textarea id="form-textarea" placeholder="Message" class="input"></textarea>
-                            </td>
-                        </tr>
-                    </table>
-                    <p id="button-p">
-                        <input id="submit-button" type="submit" value="SUBMIT">
-                    </p>
-                </form>
+<head>
+    <meta charaset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact|Masaki's Room</title>
+    <link rel="stylesheet" href="reset.css" 　type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.js"></script>
+</head>
+
+<body class="contact">
+    <!-- ヘッダー -->
+    <header class="header">
+        <nav class="header__nav">
+            <a class="header__nav-link" href="index.html">
+                <h1 class="header__nav-icon">Masaki's Room</h1>
+            </a>
+        </nav>
+    </header>
+
+    <!-- コンテイナー -->
+    <div class="container">
+        <!-- イントロダクション -->
+        <div class="introduction">
+            <div class="introduction__inner">
+                <dl>
+                    <h2 class="introduction__inner-image"></h2>
+                    <dd class="introduction__inner-title">
+                        LETS WORK TOGETHER!
+                    </dd>
+                    <dt class="introduction__inner-text">
+                        Whatever your needs and goals get in touch and I can advise how I can help you take this forward. If you would like to discuss your project or would just like to say hello then do get in touch and drop me a message below.
+                    </dt>
+                </dl>
             </div>
         </div>
-        
-        <!-- フッター -->
-        <footer id="footer">
-            <ul id="footer-ul">
-                <li class="footer-li"><a class="footer-a" href="#">WORK</a></li>
-                <li class="footer-li"><a class="footer-a" href="about.html">ABOUT</a></li>
-                <li class="footer-li"><a class="footer-a" href="contact.html">HELLO</a></li>
-            </ul>
-            <h4 id="copyright">© 2020 · MASAKI IIDA · ALL RIGHTS RESERVED</h4>
-        </footer>
-        
-        <script src="script.js"></script>
-    </body>
+        <!-- フォーム -->
+        <form class="form" action="confirmation.php" method="post">
+            <h3 class="form__title">GET IN TOUCH</h3>
+            <table class="form__inner">
+                <tr>
+                    <td>
+                        <input class="form__inner-input" type="text" name="name" placeholder="Your Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="form__inner-input" type="text" name="mail" placeholder="Your Email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="form__inner-input" type="text" name="phone" placeholder="Phone">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea class="form__inner-input" id="form__inner-textarea" name="message" placeholder="Message"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <p class="form__submit">
+                <input class="form__submit-button" type="submit" value="SUBMIT">
+            </p>
+        </form>
+    </div>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <ul class="footer__menu">
+            <li class="footer__menu__inner">
+                <a class="footer__menu__inner-button" href="profile.html">PROFILE</a>
+            </li>
+            <li class="footer__menu__inner">
+                <a class="footer__menu__inner-button" href="about.html">ABOUT</a>
+            </li>
+            <li class="footer__menu__inner">
+                <a class="footer__menu__inner-button" href="contact.html">CONTACT</a>
+            </li>
+        </ul>
+        <h2 class="copyright">© 2020 · MASAKI IIDA · ALL RIGHTS RESERVED</h2>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
 </html>

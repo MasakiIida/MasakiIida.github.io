@@ -5,79 +5,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>About|Masaki's Room</title>
-    <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="reset.css" type="text/css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.js"></script>
 </head>
 
-<body>
+<body class="about">
     <!-- ヘッダー -->
-    <header>
-        <nav id="navbar">
-            <a id="nav-a" href="index.html">
-                <h1 id="icon">Masaki's Room</h1>
+    <header class="header">
+        <nav class="header__nav">
+            <a class="header__nav-link" href="index.html">
+                <h1 class="header__nav-icon">Masaki's Room</h1>
             </a>
         </nav>
     </header>
 
     <!-- ラッパー -->
-    <div id="wrapper">
+    <div class="wrapper">
         <!-- トップ -->
-        <div id="top">
-            <h1 id="top-h1">ABOUT ME & PAGE</h1>
-            <h2 id="top-h2">全てのページ内容は架空であり、ポートフォリオのために作られたものです。<br>参考サイト: <span id="url-span"><a id="url" href="https://www.mikeinghamdesign.com/">mikeinghamdesign</a></span></h2>
-            <ul id="top-ul">
-                <li id="top-image"><img id="image" src="images/about-image.jpeg"></li>
-                <li id="top-text">
+        <div class="intro">
+            <h1 class="intro-title">ABOUT ME & PAGE</h1>
+            <h2 class="intro-text">全てのページ内容は架空であり、ポートフォリオのために作られたものです。<br>参考サイト: <span><a class="intro-url" href="https://www.mikeinghamdesign.com/">mikeinghamdesign</a></span></h2>
+            <ul class="intro__detail">
+                <li class="intro__detail-image"><img id="image" src="images/about-image.jpeg"></li>
+                <li class="intro__detail-text">
                     I'm a coffee drinking designer & front-end developer based in Derby, UK, designing user-friendly interfaces with simplicity and beauty in mind for clients in the UK and around the world.
                     <br><br>
                     On the digital side, using HTML5 and CSS3 I can create anything from a small static site, to a custom theme built for Wordpress. All projects are produced with SEO in mind making sure you have a great foundation to build on when it comes to being found in Google. I build sites that do not just look good on your desktop PC, but are also fully responsive so it looks and works great on all tablet devices and phones too.
                     <br><br>
                     If you need more than just a website then I can also help with branding and any print needs you may have. From business cards and stationery through to brochures and signs, I can help. With many years of experience in print design I can give your brand a refresh or produce your latest company brochure.
                     <br><br>
-                    Whatever your needs and goals do get in touch and I can advise how I can help you take this forward. If you would like to discuss your project or would just like to say hello then do get in touch and <span><a id="text-link" href="contact.html">drop me a message.</a></span>
+                    Whatever your needs and goals do get in touch and I can advise how I can help you take this forward. If you would like to discuss your project or would just like to say hello then do get in touch and <span><a class="text-link" href="contact.html">drop me a message.</a></span>
                 </li>
             </ul>
-
         </div>
 
         <!-- ボトム -->
-        <div id="bottom">
-            <div id="bottom-container">
-                <h3 id="bottom-h3">HOW I CAN HELP</h3>
+        <div class="info">
+            <div class="info__inner">
+                <h3 class="info__inner-title">HOW I CAN HELP</h3>
 
-                <div class="bottom-div">
-                    <ul id="first-ul">
-                        <li class="bottom-title" id="first-title">WEB DESIGN</li>
-                        <li class="bottom-text">From simple wireframes through to creating a modern fresh website design reflecting your brand, I can help.</li>
+                <div class="info__inner__desc">
+                    <ul class="info__inner__desc-webDesign">
+                        <li class="info__inner__desc-title">WEB DESIGN</li>
+                        <li class="info__inner__desc-text">From simple wireframes through to creating a modern fresh website design reflecting your brand, I can help.</li>
                     </ul>
                 </div>
-                <div class="bottom-div">
-                    <ul id="second-ul">
-                        <li class="bottom-title" id="second-title">WEB DEVELOPMENT</li>
-                        <li class="bottom-text">From a small static site to a new blog theme or WordPress site, I can bring your site design to life! All sites are responsive and built with SEO in mind.</li>
+                <div class="info__inner__desc">
+                    <ul class="info__inner__desc-webDeve">
+                        <li class="info__inner__desc-title">WEB DEVELOPMENT</li>
+                        <li class="info__inner__desc-text">From a small static site to a new blog theme or WordPress site, I can bring your site design to life! All sites are responsive and built with SEO in mind.</li>
                     </ul>
                 </div>
-                <div class="bottom-div">
-                    <ul id="third-ul">
-                        <li class="bottom-title" id="third-title">GRAPHIC DESIGN</li>
-                        <li class="bottom-text">Branding, business cards and matching stationery, everything you need and more to go with your brand new website.</li>
+                <div class="info__inner__desc">
+                    <ul class="info__inner__graphic">
+                        <li class="info__inner__desc-title">GRAPHIC DESIGN</li>
+                        <li class="info__inner__desc-text">Branding, business cards and matching stationery, everything you need and more to go with your brand new website.</li>
                     </ul>
                 </div>
-                <h4 class="clear" id="bottom-end"><a id="end-content" href="contact.html">LET'S DISCUSS YOUR PROJECT</a></h4>
+                <div clas="clear"></div>
+                <h4 class="info__inner__contact"><a class="info__inner__contact-link" href="contact.html">LET'S DISCUSS YOUR PROJECT</a></h4>
             </div>
         </div>
     </div>
 
     <!-- フッター -->
-    <footer id="footer">
-        <ul id="footer-ul">
-            <li class="footer-li"><a class="footer-a" href="#">WORK</a></li>
-            <li class="footer-li"><a class="footer-a" href="about.html">ABOUT</a></li>
-            <li class="footer-li"><a class="footer-a" href="contact.html">HELLO</a></li>
+    <footer class="footer">
+        <ul class="footer__menu">
+            <li class="footer__menu__inner">
+                <a class="footer__menu__inner-button" href="profile.html">PROFILE</a>
+            </li>
+            <li class="footer__menu__inner">
+                <a class="footer__menu__inner-button" href="about.html">ABOUT</a>
+            </li>
+            <li class="footer__menu__inner">
+                <a class="footer__menu__inner-button" href="contact.html">CONTACT</a>
+            </li>
         </ul>
-        <h4 id="copyright">© 2020 · MASAKI IIDA · ALL RIGHTS RESERVED</h4>
+        <h2 class="copyright">© 2020 · MASAKI IIDA · ALL RIGHTS RESERVED</h2>
     </footer>
 
     <script src="script.js"></script>
