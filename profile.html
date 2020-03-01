@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charaset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile|Masaki's Room</title>
-    <link rel="stylesheet" href="reset.css" 　type="text/css">
+    <link rel="stylesheet" href="reset.css" type="text/css">
     <link rel="stylesheet" href="style.css" type="text/css" media="screen">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -42,7 +42,9 @@
     <!-- ビデオ -->
     <div class="video">
         <div class="video-inner">
-            <video class="video-file" src="images/video.mp4" loop autoplay muted></video>
+            <video class="video-file" loop muted autoplay webkit-autoplayesinline playsinline>
+                <source src="images/home-video.mp4" type="video/mp4">
+            </video>
         </div>
         <h1 class="video-text">MY PROFILE</h1>
         <a class="video__scroll" href="#section">
