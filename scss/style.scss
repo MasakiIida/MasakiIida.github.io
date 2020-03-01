@@ -1,0 +1,228 @@
+/* ========================================
+インポートCSS
+========================================= */
+@import './aboutStyle';
+@import './contactStyle';
+@import './profileStyle';
+@import './mailtoStyle';
+/* ========================================
+変数
+========================================= */
+$style-background-color: #262120;
+$style-font-white: #ffffff;
+$style-font-black: #000000;
+$style-gray: #f3f5f8;
+$style-dark-gray: #a5a5a5;
+$style-hover-color: #819ddb;
+/* ========================================
+レスポンシブ
+========================================= */
+$pc: 1200px; //PC
+$tab-sp: 780px; //タブレットとスマートフォン
+@mixin pc {
+  @media(max-width:($pc)) {
+    @content;
+  }
+}
+@mixin tab-sp {
+  @media(max-width:($tab-sp)) {
+    @content;
+  }
+}
+/* ========================================
+    ボディー
+========================================= */
+.index {
+  font-family: "メイリオ", Meiryo;
+  background-color: $style-background-color;
+  /* ========================================
+    ラッパー
+    ========================================= */
+  #wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* ========================================
+        トップ
+        ========================================= */
+    .top {
+      width: 100%;
+      height: 800px;
+      margin: 0 auto;
+      background: url("images/main-image.jpg") no-repeat;
+      text-align: center;
+
+      .top__inner {
+        padding-top: 250px;
+
+        .top__inner-title {
+          letter-spacing: 0.3em;
+          color: $style-font-white;
+          font-weight: bold;
+          font-size: 44px;
+        }
+
+        .top__inner-text {
+          letter-spacing: 0.1em;
+          color: $style-font-white;
+          font-size: 30px;
+        }
+      }
+
+      .top__contactUrl {
+        color: $style-font-white;
+        font-size: 20px;
+        padding: 30px;
+        border-radius: 5px;
+        border: 2px solid $style-font-white;
+        display: inline-block;
+        text-decoration: none;
+        margin-top: 150px;
+        transition-duration: 0.3s;
+        letter-spacing: 0.1em;
+
+        &:hover {
+          color: $style-hover-color;
+          border: 2px solid $style-hover-color;
+          cursor: pointer;
+          transition-duration: 0.3s;
+        }
+      }
+
+      .top__goDown {
+        margin: 50px auto;
+        padding-bottom: 50px;
+        display: table;
+        color: $style-font-white;
+        text-decoration: none;
+        transition-duration: 0.3s;
+
+        &:hover {
+          transform: scale(1.05);
+          transition-duration: 0.3s;
+        }
+
+        .top__goDownImg {
+          width: 25px;
+        }
+      }
+    }
+    /* ========================================
+        パネル
+        ========================================= */
+    .panel {
+      margin-top: 150px;
+      @include pc {
+        padding: 0 10px;
+      }
+
+      .panel__inner {
+        float: left;
+        width: 580px;
+        height: 50%;
+        transition: 0.5s;
+        margin: 10px;
+
+        &:hover {
+          transition: 0.5s;
+          filter: blur(2px);
+        }
+        @include pc {
+          width: 50%;
+          margin: 0;
+          transition: all 3s;
+        }
+        @include tab-sp {
+          margin: 0 auto;
+          width: 100%;
+        }
+
+        .panel__inner-image {
+          font-size: 20px;
+          display: block;
+          color: $style-font-black;
+          line-height: 400px;
+          letter-spacing: 0.1em;
+          text-align: center;
+          text-decoration: none;
+        }
+        opacity: 0;
+        transform: translate(0, 100px);
+        transition: all 2s;
+
+        &.active {
+          opacity: 1;
+          transform: translate(0, 0);
+        }
+      }
+
+      #about {
+        background: url("images/about.jpeg") center no-repeat;
+      }
+
+      #contact {
+        background: url("images/contact.jpeg") center no-repeat;
+      }
+
+      #portfolio {
+        background: url("images/portfolio.jpeg") center no-repeat;
+      }
+
+      #profile {
+        background: url("images/profile.jpeg") center no-repeat;
+      }
+    }
+    /* ========================================
+        フロート解除
+        ========================================= */
+    .cf {
+      clear: both;
+    }
+  }
+  /* ========================================
+    フッター
+    ========================================= */
+  .footer {
+    width: 100%;
+    height: 300px;
+
+    .footer__menu {
+      text-align: center;
+
+      .footer__menu__inner {
+        margin: 100px 20px;
+        display: inline-block;
+        opacity: 0.8;
+        @include tab-sp {
+          display: block;
+          width: 100%;
+          margin: 50px 0;
+        }
+      }
+
+      .footer__menu__inner-button {
+        color: $style-font-white;
+        border-radius: 5px;
+        text-decoration: none;
+        padding: 15px;
+
+        &:hover {
+          border: 1px solid $style-hover-color;
+          padding: 14px;
+          color: $style-hover-color;
+          transition-duration: 0.3s;
+          color: $style-hover-color;
+        }
+      }
+    }
+
+    .copyright {
+      text-align: center;
+      color: $style-font-white;
+      font-size: 12px;
+      opacity: 0.8;
+      @include tab-sp {
+        width: 100%;
+      }
+    }
+  }
+}
