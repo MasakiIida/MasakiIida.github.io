@@ -12,7 +12,7 @@ $con-hover-color: #819ddb;
 /* ========================================
     レスポンシブ
 ========================================= */
-$tab-sp: 780px; //タブレットとスマートフォン
+$tab-sp: 768px; //タブレットとスマートフォン
 
 @mixin tab-sp {
     @media(max-width:($tab-sp)) {
@@ -47,7 +47,7 @@ $tab-sp: 780px; //タブレットとスマートフォン
             .header__nav-link {
                 text-decoration: none;
 
-                .header__nav-icon{
+                .header__nav-icon {
                     color: $con-font-white;
                     font-weight: bold;
                     display: inline;
@@ -217,13 +217,12 @@ $tab-sp: 780px; //タブレットとスマートフォン
         .copyright {
             text-align: center;
             color: $con-font-white;
-            font-size: 12px;
             opacity: 0.8;
             padding-bottom: 50px;
 
             @include tab-sp {
                 width: 100%;
-                
+                font-size: 3vw;
             }
         }
     }

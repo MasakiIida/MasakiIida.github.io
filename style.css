@@ -256,8 +256,11 @@
       padding-bottom: 70px;
       text-align: center;
       color: #ffffff;
-      font-size: 10px;
       opacity: 0.5; }
+      @media (max-width: 768px) {
+        .about .footer .copyright {
+          width: 100%;
+          font-size: 3vw; } }
 
 /* ========================================
 変数
@@ -315,7 +318,7 @@
       width: 555px;
       height: auto;
       margin: 0 auto; }
-      @media (max-width: 780px) {
+      @media (max-width: 768px) {
         .contact .container .introduction {
           width: auto;
           padding: 0 10px; } }
@@ -338,7 +341,7 @@
       width: 100%;
       height: auto;
       text-align: center; }
-      @media (max-width: 780px) {
+      @media (max-width: 768px) {
         .contact .container .form {
           width: auto;
           padding: 0 10px; } }
@@ -359,7 +362,7 @@
           border: solid 0px;
           letter-spacing: 0.07em;
           padding-left: 20px; }
-          @media (max-width: 780px) {
+          @media (max-width: 768px) {
             .contact .container .form .form__inner .form__inner-input {
               width: 100%;
               -webkit-box-sizing: border-box; } }
@@ -389,7 +392,7 @@
         margin: 100px 20px;
         display: inline-block;
         opacity: 0.8; }
-        @media (max-width: 780px) {
+        @media (max-width: 768px) {
           .contact .footer .footer__menu .footer__menu__inner {
             display: block;
             padding: 30px 0;
@@ -408,12 +411,12 @@
     .contact .footer .copyright {
       text-align: center;
       color: #ffffff;
-      font-size: 12px;
       opacity: 0.8;
       padding-bottom: 50px; }
-      @media (max-width: 780px) {
+      @media (max-width: 768px) {
         .contact .footer .copyright {
-          width: 100%; } }
+          width: 100%;
+          font-size: 3vw; } }
 
 /* ========================================
 変数
@@ -817,9 +820,9 @@
               transform: translate(-50%, -50%);
               -webkit-transform: translate(-50%, -50%);
               -ms-transform: translate(-50%, -50%);
-              font-size: 6vw;
+              font-size: 24px;
               width: 80%;
-              line-height: 45px;
+              line-height: 40px;
               height: 40px;
               text-align: center;
               margin: 20px auto; } }
@@ -944,9 +947,9 @@
               transform: translate(-50%, -50%);
               -webkit-transform: translate(-50%, -50%);
               -ms-transform: translate(-50%, -50%);
-              font-size: 6vw;
+              font-size: 24px;
               width: 80%;
-              line-height: 50px;
+              line-height: 40px;
               height: 40px;
               text-align: center;
               margin: 20px auto; } }
@@ -1066,9 +1069,9 @@
               transform: translate(-50%, -50%);
               -webkit-transform: translate(-50%, -50%);
               -ms-transform: translate(-50%, -50%);
-              font-size: 5vw;
+              font-size: 24px;
               width: 80%;
-              line-height: 50px;
+              line-height: 40px;
               height: 40px;
               text-align: center;
               margin: 20px auto; } }
@@ -1324,7 +1327,8 @@
       margin-top: 70px; }
       @media (max-width: 768px) {
         .profile .footer .copyright {
-          padding-bottom: 15px; } }
+          padding-bottom: 15px;
+          font-size: 3vw; } }
   .profile #page_top {
     width: 50px;
     height: 50px;
@@ -1455,13 +1459,12 @@
     .mailto .footer .copyright {
       text-align: center;
       color: #fff;
-      font-size: 12px;
       opacity: 0.8;
       padding-bottom: 50px; }
       @media (max-width: 768px) {
         .mailto .footer .copyright {
           width: 100%;
-          font-size: 12px; } }
+          font-size: 3vw; } }
 
 /* ========================================
 変数
@@ -1476,23 +1479,23 @@
   font-family: "メイリオ", Meiryo;
   background-color: #262120;
   /* ========================================
-    ラッパー
-    ========================================= */
+  ラッパー
+  ========================================= */
   /* ========================================
-    フッター
-    ========================================= */ }
+  フッター
+  ========================================= */ }
   .index #wrapper {
     max-width: 1200px;
     margin: 0 auto;
     /* ========================================
-        トップ
-        ========================================= */
+    トップ
+    ========================================= */
     /* ========================================
-        パネル
-        ========================================= */
+    パネル
+    ========================================= */
     /* ========================================
-        フロート解除
-        ========================================= */ }
+    フロート解除
+    ========================================= */ }
     .index #wrapper .top {
       width: 100%;
       height: 800px;
@@ -1560,7 +1563,7 @@
             width: 50%;
             margin: 0;
             transition: all 3s; } }
-        @media (max-width: 780px) {
+        @media (max-width: 768px) {
           .index #wrapper .panel .panel__inner {
             margin: 0 auto;
             width: 100%; } }
@@ -1594,7 +1597,7 @@
         margin: 100px 20px;
         display: inline-block;
         opacity: 0.8; }
-        @media (max-width: 780px) {
+        @media (max-width: 768px) {
           .index .footer .footer__menu .footer__menu__inner {
             display: block;
             width: 100%;
@@ -1613,10 +1616,10 @@
     .index .footer .copyright {
       text-align: center;
       color: #ffffff;
-      font-size: 12px;
       opacity: 0.8; }
-      @media (max-width: 780px) {
+      @media (max-width: 768px) {
         .index .footer .copyright {
-          width: 100%; } }
+          width: 100%;
+          font-size: 3vw; } }
 
 /*# sourceMappingURL=style.css.map */

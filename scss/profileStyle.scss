@@ -512,9 +512,9 @@ $sp: 768px; // スマートフォン
                         transform: translate(-50%, -50%);
                         -webkit-transform: translate(-50%, -50%);
                         -ms-transform: translate(-50%, -50%);
-                        font-size: 6vw;
+                        font-size: 24px;
                         width: 80%;
-                        line-height: 45px;
+                        line-height: 40px;
                         height: 40px;
                         text-align: center;
                         margin: 20px auto;
@@ -676,9 +676,9 @@ $sp: 768px; // スマートフォン
                         transform: translate(-50%, -50%);
                         -webkit-transform: translate(-50%, -50%);
                         -ms-transform: translate(-50%, -50%);
-                        font-size: 6vw;
+                        font-size: 24px;
                         width: 80%;
-                        line-height: 50px;
+                        line-height: 40px;
                         height: 40px;
                         text-align: center;
                         margin: 20px auto;
@@ -836,9 +836,9 @@ $sp: 768px; // スマートフォン
                         transform: translate(-50%, -50%);
                         -webkit-transform: translate(-50%, -50%);
                         -ms-transform: translate(-50%, -50%);
-                        font-size: 5vw;
+                        font-size: 24px;
                         width: 80%;
-                        line-height: 50px;
+                        line-height: 40px;
                         height: 40px;
                         text-align: center;
                         margin: 20px auto;
@@ -1216,6 +1216,7 @@ $sp: 768px; // スマートフォン
 
             @include sp {
                 padding-bottom: 15px;
+                font-size: 3vw;
             }
         }
     }

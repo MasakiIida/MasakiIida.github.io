@@ -191,7 +191,7 @@ $sp: 768px; //スマートフォン
                             color: $about-hover-color;
                             -webkit-transform: scale(1.1);
                             transform: scale(1.1);
-                            
+
                         }
                     }
 
@@ -254,7 +254,7 @@ $sp: 768px; //スマートフォン
                     @include pc {
                         width: 100%;
                         margin: 0;
-                        padding-bottom:330px;
+                        padding-bottom: 330px;
                     }
 
                     .info__inner__desc-webDesign {
@@ -277,7 +277,7 @@ $sp: 768px; //スマートフォン
                         letter-spacing: 0.2em;
                         font-size: 18px;
 
-                        
+
                         &:before {
                             content: '';
                             position: absolute;
@@ -308,7 +308,7 @@ $sp: 768px; //スマートフォン
                     border-bottom: 2px solid $about-hover-color;
                     padding-bottom: 10px;
                     font-size: 20px;
-                    
+
                     @include sp {
                         margin-bottom: 50px;
                     }
@@ -338,7 +338,7 @@ $sp: 768px; //スマートフォン
         width: 100%;
         height: auto;
         background-color: $about-header-footer;
-        
+
         .footer__menu {
             text-align: center;
             padding: 50px 0;
@@ -354,7 +354,7 @@ $sp: 768px; //スマートフォン
                     padding: 30px 0;
                 }
             }
-            
+
             .footer__menu__inner-button {
                 color: $about-font-white;
                 border-radius: 5px;
@@ -375,8 +375,12 @@ $sp: 768px; //スマートフォン
             padding-bottom: 70px;
             text-align: center;
             color: $about-font-white;
-            font-size: 10px;
             opacity: 0.5;
+
+            @include sp {
+                width: 100%;
+                font-size: 3vw;
+            }
         }
     }
 

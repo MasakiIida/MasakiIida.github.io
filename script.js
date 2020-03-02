@@ -1,10 +1,9 @@
-
-//　リロード時、トップへ
-$(function() {
-    $('html,body').animate({ scrollTop: 0 }, '1');
-});
-
 $(function () {
+    // リロード時、トップへ
+    $('html,body').animate({
+        scrollTop: 0
+    }, '1');
+
     // ホバー時のフォントサイズ変更
     $(".panel__inner-image").hover(function () {
         $(this).stop().animate({
@@ -30,62 +29,42 @@ $(function () {
     });
 
     // スムーススクロール
-    $(function () {
-        $('a[href^="#"]').click(function () {
-            var speed = 400;
-            var href = $(this).attr("href");
-            var target = $(href == "#" || href == "" ? 'html' : href);
-            var position = target.offset().top;
-            $('body,html').animate({
-                scrollTop: position
-            }, speed, 'swing');
-            return false;
-        });
+    $('a[href^="#"]').click(function () {
+        var speed = 400;
+        var href = $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $('body,html').animate({
+            scrollTop: position
+        }, speed, 'swing');
+        return false;
     });
 
     //スクロール表示
-    $(function () {
-        $(window).scroll(function () {
-            $('.info__inner__desc,#bottom-end,.panel__inner,.intro__identity,.intro__contact,.intro__skill').each(function () {
-                var position = $(this).offset().top;
-                var scroll = $(window).scrollTop();
-                var windowHeight = $(window).height();
-                if (scroll > position - windowHeight + 0) {
-                    $(this).addClass('active');
-                } else {
-                    $(this).removeClass('active');
-                }
-            });
+    $(window).scroll(function () {
+        $('.info__inner__desc,#bottom-end,.panel__inner,.intro__identity,.intro__contact,.intro__skill').each(function () {
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > position - windowHeight + 0) {
+                $(this).addClass('active');
+            } else {
+                $(this).removeClass('active');
+            }
         });
     });
-});
 
-//スクロール発火イベント
-window.addEventListener("scroll", function () {
-    //スクロールの高さを取得
-    let scroll = window.pageYOffset;
-
-    if (scroll > 600) {
-        document.getElementById("header").style.backgroundColor = '#00bfff';
-    } else {
-        document.getElementById("header").style.backgroundColor = 'rgba(0, 0, 0, .0)';
-    }
-});
-
-// nav スライド表示
-$(function() {
-    $("#my-parts-icon").click(function() {
-        if($(".nav__menu-sp").is(":hidden")) {
+    // nav スライド表示
+    $("#my-parts-icon").click(function () {
+        if ($(".nav__menu-sp").is(":hidden")) {
             $(".nav__menu-sp").slideDown();
 
         } else {
             $(".nav__menu-sp").slideUp();
         }
     });
-});
 
-$(function() {
-    var getWindowMovieHeight = function() {
+    var getWindowMovieHeight = function () {
         // ここでブラウザの縦横のサイズを取得します。
         var windowSizeHeight = $(window).outerHeight();
         var windowSizeWidth = $(window).outerWidth();
@@ -97,25 +76,25 @@ $(function() {
 
         if (windowMovieSizeHeight < windowSizeHeight) {
             // 横幅のほうが大きくなってしまう場合にだけ反応するようにしています。
-            $("#video").css({left: -windowMovieSizeWidthLeftMargin});
+            $("#video").css({
+                left: -windowMovieSizeWidthLeftMargin
+            });
         }
     };
 
     // 以下画面の可変にも対応できるように。
-    $(window).on('load', function(){
+    $(window).on('load', function () {
         getWindowMovieHeight();
     });
 
-    $(window).on('resize', function(){
+    $(window).on('resize', function () {
         getWindowMovieHeight();
     });
-});
 
-jQuery(function() {
     var appear = false;
     var pagetop = $('#page_top');
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {  //100pxスクロールしたら
+        if ($(this).scrollTop() > 100) { //100pxスクロールしたら
             if (appear == false) {
                 appear = true;
                 pagetop.stop().animate({
@@ -131,8 +110,23 @@ jQuery(function() {
             }
         }
     });
+    
     pagetop.click(function () {
-        $('body, html').animate({ scrollTop: 0 }, 500); //0.5秒かけてトップへ戻る
+        $('body, html').animate({
+            scrollTop: 0
+        }, 500); //0.5秒かけてトップへ戻る
         return false;
+    });
+
+    //スクロール発火イベント
+    window.addEventListener("scroll", function () {
+        //スクロールの高さを取得
+        let scroll = window.pageYOffset;
+
+        if (scroll > 600) {
+            document.getElementById("header").style.backgroundColor = '#00bfff';
+        } else {
+            document.getElementById("header").style.backgroundColor = 'rgba(0, 0, 0, .0)';
+        }
     });
 });
